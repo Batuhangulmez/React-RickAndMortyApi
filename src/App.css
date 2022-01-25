@@ -1,7 +1,57 @@
+.App{
+  background-color: #1E1E20;
+  min-height: 100vh;
+}
+h1{
+    display: flex;
+    height: 20vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+div{
+    color: white;
+}
+img{
+    border-radius: 100%;
+}
+.characterName{
+    display: flex;
+    margin: 8px;
+}
+.characterName div {
+    padding: 8px;
+}
+.characterGender{
+    margin: 8px;
+}
 .Character {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:69vh ;
+    height: 100%;
+}
+.EpisodeLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.col-6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.paginationButton{
+    background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 100%;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+
 }

@@ -5,7 +5,7 @@ import EpisodeLocation from './EpisodeLocation';
 const card = (props) => {
     let { episode, image, location, origin, gender, name, species, status } = props.fetchData
     return <div className='row'>
-        <div className='col-4'>
+        <div className='col-5'>
             <Character data={{ gender, name, species, status, image }} />
         </div>
         <div className='col-7'>

@@ -4,14 +4,18 @@ import '../../App.css';
 const Character = (props) => {
     let { gender, name, species, status, image } = props.data
     return <div className='Character'>
-        <div>
+        <div className='CharacterİMG'>
             <img src={image} />
         </div>
-        <div>
-            {name}
-            {status}
+        <div className='characterName'>
+            <div>
+                {name}
+            </div>
+            <div>
+                {status}
+            </div>
         </div>
-        <div>
+        <div className='characterGender'>
             {gender}
             {species}
         </div>

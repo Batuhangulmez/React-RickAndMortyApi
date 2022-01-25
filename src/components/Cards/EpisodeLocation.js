@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const EpisodeLocation = (props) => {
-    let { episode, location, origin } = props.data
+    const { episode, location, origin } = props.data
 
-    return <div>
-        {location.name}
-        {origin.name}
 
-    </div>;
+
+    return <div className='EpisodeLocation'>
+        {
+            (origin === undefined) ? <div>LOADİNG...</div> :
+                <div>{origin.name} {location.name}</div>
+        }
+    </div>
 };
 
 export default EpisodeLocation;
